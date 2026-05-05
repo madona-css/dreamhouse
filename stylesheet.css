@@ -37,6 +37,15 @@ body {
     border-radius: 5px;
 }
 
+.mega-menu {
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+header {
+    overflow: visible;
+}
+
 .part1 img {
     width: 100%;
 }
@@ -203,6 +212,13 @@ ul {
     background-color: rgb(187, 126, 243);
 }
 
+header {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+}
+
 .two :hover .angledecor {
     background-color: rgb(187, 126, 243);
 }
@@ -280,26 +296,26 @@ ul {
     text-decoration: underline;
 }
 
-.mega-menu{
+.mega-menu {
     width: 100%;
     left: 0;
-    right:0;
+    right: 0;
     margin: auto;
     top: 100%;
-    border-radius:0 ;
-   
+   max-height: none;
+overflow: visible;
 }
 
-header {
-    z-index: 1000;
-}
-.navbar .dropdown{position: static;}
+
+
+
 .hero {
     background-image: linear-gradient(to right, rgba(70, 23, 154, 0.8), rgba(80, 23, 154, 0.8)),
         url(./images/hero-bg-img.png);
     background-size: cover;
     background-position: center;
     min-height: 100vh;
+    background-attachment: fixed;
 }
 
 .services {
@@ -1004,6 +1020,13 @@ hr {
     font-size: 18px;
 }
 
+@media(max-width:768px) {
+    .social i {
+        font-size: 10px;
+        padding: 5px;
+    }
+}
+
 .social i:hover {
     transform: scale(1.3);
     background-color: rgba(222, 99, 238, 0.47);
@@ -1123,7 +1146,7 @@ hr {
     margin-top: 16px;
     border-radius: 50%;
     background-color: rgb(231, 222, 240);
-   
+
 
 }
 
@@ -1136,14 +1159,52 @@ hr {
     margin-right: 16px;
     margin-top: 16px;
     border-radius: 50%;
-    border: 3px solid rgba(137, 43, 226, 0.53);}
-hr{width:90%;height:3px;color: white;margin:auto;margin-bottom: 20px;}
+    border: 3px solid rgba(137, 43, 226, 0.53);
+}
 
-#Contact{padding-top: 0;}
-footer{background-color: rgb(98, 43, 226);color: white;}
-.end h3{font-size: 25px;font-weight: 700;}
-.end i{background-color: rgba(206, 174, 219, 0.4);padding: 10px;border-radius: 5px;margin-left: 10px;font-size: 15px;}
-.end i:hover{transform: scale(1.1);background-color: rgb(183, 94, 224);}
-.love{color:red;}
-.made{padding-bottom: 20px;}
-#megaMenu .contanier{margin-inline: 20px;}
+hr {
+    width: 90%;
+    height: 3px;
+    color: white;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+#Contact {
+    padding-top: 0;
+}
+
+footer {
+    background-color: rgb(98, 43, 226);
+    color: white;
+}
+
+.end h3 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.end i {
+    background-color: rgba(206, 174, 219, 0.4);
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.end i:hover {
+    transform: scale(1.1);
+    background-color: rgb(183, 94, 224);
+}
+
+.love {
+    color: red;
+}
+
+.made {
+    padding-bottom: 20px;
+}
+
+#megaMenu .contanier {
+    margin-inline: 20px;
+}
