@@ -10,7 +10,7 @@ body {
     background-color: rgb(250 250 249);
     font-family: "EXO", sans-serif;
     padding-top: 70px;
-
+    overflow-x: hidden;
 }
 
 .part1 {
@@ -37,9 +37,102 @@ body {
     border-radius: 5px;
 }
 
+.nav-item.dropdown {
+    position: static;
+}
+
 .mega-menu {
-    max-height: 80vh;
-    overflow-y: auto;
+    position: absolute !important;
+    top: 80px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 1200px;
+    max-width: 90vw;
+    display: none;
+    z-index: 1000;
+    height: 600px;
+
+}
+
+@media (max-width: 576px) {
+    .mega-menu {
+        position: static !important;
+        transform: none !important;
+        width: 100%;
+        max-width: 100%;
+        border-radius: 15px;
+        height: 500px;
+        margin-top: 15px;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .mega-menu .container {
+        padding: 0;
+    }
+
+    .part1,
+    .part2,
+    .part3,
+    .part4 {
+        margin-bottom: 30px;
+    }
+
+    .part3 .card,
+    .part4 .card {
+        width: 100% !important;
+    }
+
+    .luxury a {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar-collapse {
+        background-color: white;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .end {
+        flex-direction: column;
+    }
+
+    .hint {
+        background-color: rgb(247, 245, 244);
+    }
+
+}
+
+@media(max-width:991px) {}
+
+@media(max-width:1200px) {
+    .navbar-collapse {
+        background-color: white;
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid gray;
+        margin-inline: auto;
+    }
+
+    .mega-menu {
+        height: 500px;
+        overflow-y: auto;
+        border-radius: 15px;
+    }
+
+    .end {
+        flex-direction: column;
+    }
+
+    .hint {
+        background-color: rgb(247, 245, 244);
+    }
+
 }
 
 header {
@@ -295,19 +388,6 @@ header {
     color: blueviolet;
     text-decoration: underline;
 }
-
-.mega-menu {
-    width: 100%;
-    left: 0;
-    right: 0;
-    margin: auto;
-    top: 100%;
-   max-height: none;
-overflow: visible;
-}
-
-
-
 
 .hero {
     background-image: linear-gradient(to right, rgba(70, 23, 154, 0.8), rgba(80, 23, 154, 0.8)),
@@ -1203,8 +1283,4 @@ footer {
 
 .made {
     padding-bottom: 20px;
-}
-
-#megaMenu .contanier {
-    margin-inline: 20px;
 }
