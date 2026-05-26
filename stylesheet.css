@@ -108,7 +108,11 @@ body {
 
 }
 
-@media(max-width:991px) {}
+@media(min-width:991px),(max-width:1200px) {
+    .cameraa {
+            top: 38% !important;
+        }
+}
 
 @media(max-width:1200px) {
     .navbar-collapse {
