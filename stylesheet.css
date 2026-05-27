@@ -108,7 +108,7 @@ body {
 
 }
 
-@media(min-width:991px) and (max-width:1200px) {
+@media(min-width:992px) and (max-width:1200px) {
     .cameraa {
         top: 38% !important;
     }
@@ -377,7 +377,11 @@ header {
     position: relative;
     transition: 0.3s;
 }
-.offer1{height:100%;}
+
+.offer1 {
+    height: 100%;
+}
+
 .navbar-brand {
     font-weight: 600;
     margin-left: 20px;
@@ -385,7 +389,7 @@ header {
 }
 
 .navbar {
-   min-height: 80px;
+    min-height: 80px;
 }
 
 .nav-link:hover {
