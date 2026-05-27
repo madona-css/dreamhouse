@@ -1,0 +1,1294 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(250 250 249);
+    font-family: "EXO", sans-serif;
+    padding-top: 70px;
+    overflow-x: hidden;
+}
+
+.part1 {
+    cursor: pointer;
+}
+
+.luxury a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-block: 30px;
+    text-decoration: none;
+    text-align: left;
+}
+
+.luxury a:hover {
+    background-color: rgb(240, 247, 248);
+}
+
+.part1 div img {
+    width: 64px;
+    height: 64px;
+    border-radius: 5px;
+}
+
+.nav-item.dropdown {
+    position: static;
+}
+
+.mega-menu {
+    position: absolute !important;
+    top: 80px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 1200px;
+    max-width: 90vw;
+    display: none;
+    z-index: 1000;
+    height: 600px;
+
+}
+
+@media (max-width: 576px) {
+    .mega-menu {
+        position: static !important;
+        transform: none !important;
+        width: 100%;
+        max-width: 100%;
+        border-radius: 15px;
+        height: 500px;
+        margin-top: 15px;
+        overflow-y: auto;
+        overflow-x: hidden !important;
+    }
+
+    .mega-menu .container {
+        padding: 0;
+    }
+
+    .part1,
+    .part2,
+    .part3,
+    .part4 {
+        margin-bottom: 30px;
+    }
+
+    .part3 .card,
+    .part4 .card {
+        width: 100% !important;
+    }
+
+    .luxury a {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar-collapse {
+        background-color: white;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .end {
+        flex-direction: column;
+    }
+
+    .hint {
+        background-color: rgb(247, 245, 244);
+    }
+
+}
+
+@media(min-width:992px) and (max-width:1200px) {
+    .cameraa {
+        top: 38% !important;
+    }
+}
+
+@media(max-width:1200px) {
+    .navbar-collapse {
+        background-color: white;
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid gray;
+        margin-inline: auto;
+    }
+
+    .mega-menu {
+        height: 500px;
+        overflow-y: auto;
+        border-radius: 15px;
+    }
+
+    .end {
+        flex-direction: column;
+    }
+
+    .hint {
+        background-color: rgb(247, 245, 244);
+    }
+
+}
+
+header {
+    overflow: visible;
+}
+
+.part1 img {
+    width: 100%;
+}
+
+.luxury h5 {
+    margin-bottom: 0;
+    font-size: 12px;
+    color: rgb(58, 58, 58);
+    font-weight: 300;
+}
+
+.luxury p {
+    margin-bottom: 0;
+    font-size: 12px;
+    color: grey;
+}
+
+.part2 li {
+    padding-block: 10px;
+    font-size: 15px;
+    font-weight: 300;
+    text-align: left;
+    cursor: pointer;
+}
+
+.part2 li:hover {
+    color: rgb(195, 143, 243);
+}
+
+ul {
+    list-style: none;
+}
+
+.part2 i {
+    font-size: 15px;
+    padding: 5px;
+    color: grey;
+}
+
+.part3 div img {
+    height: 75px;
+    border-radius: 10px;
+}
+
+.purp {
+    position: relative;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(138, 61, 209, 0.48);
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.card-img-overlay {
+    z-index: 2;
+    text-align: left;
+}
+
+.purp {
+    overflow: hidden;
+}
+
+.purp:hover {
+    background-color: rgba(203, 165, 238, 0.1);
+}
+
+.part4 .card-body {
+    text-align: left;
+}
+
+.guide {
+    background-color: rgb(226, 217, 235);
+    padding: 10px;
+    color: blueviolet;
+    border-radius: 50%;
+}
+
+.tips {
+    background-color: rgb(209, 238, 209);
+    padding: 10px;
+    color: rgb(35, 233, 17);
+    border-radius: 50%;
+}
+
+.reports {
+    background-color: rgb(214, 209, 238);
+    padding: 10px;
+    color: rgb(75, 17, 233);
+    border-radius: 50%;
+}
+
+.one :hover h5 {
+    color: blueviolet;
+}
+
+.two :hover h5 {
+    color: blueviolet;
+}
+
+.three :hover h5 {
+    color: rgb(86, 226, 43);
+}
+
+.one span {
+    color: blueviolet;
+}
+
+.two span {
+    color: blueviolet;
+}
+
+.arrows {
+    color: blueviolet;
+    font-size: 15px;
+}
+
+.three .arrows {
+    color: rgb(95, 226, 43);
+}
+
+.three span {
+    color: rgb(95, 226, 43);
+}
+
+.one :hover .arrows {
+    transform: translateX(4px);
+    transition: 0.3s;
+}
+
+.two :hover .arrows {
+    transform: translateX(4px);
+    transition: 0.3s;
+}
+
+.three :hover .arrows {
+    transform: translateX(4px);
+    transition: 0.3s;
+}
+
+.angle {
+    position: relative;
+}
+
+.angledecor {
+    position: absolute;
+    top: -30px;
+    right: -50px;
+    width: 80px;
+    height: 80px;
+    margin-right: 16px;
+    margin-top: 16px;
+    border-radius: 50%;
+    background-color: rgb(215, 186, 243);
+    opacity: 0.4;
+    transition: 0.3s ease;
+}
+
+.one :hover .angledecor {
+    background-color: rgb(187, 126, 243);
+}
+
+header {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+}
+
+.two :hover .angledecor {
+    background-color: rgb(187, 126, 243);
+}
+
+.three .angledecor {
+    position: absolute;
+    top: -30px;
+    right: -50px;
+    width: 80px;
+    height: 80px;
+    margin-right: 16px;
+    margin-top: 16px;
+    border-radius: 50%;
+    background-color: rgb(207, 243, 186);
+    opacity: 0.4;
+    transition: 0.3s ease;
+}
+
+.three :hover .angledecor {
+    background-color: rgb(187, 241, 87);
+}
+
+.one {
+    border: 1px solid rgb(232, 223, 241);
+    cursor: pointer;
+}
+
+.one:hover {
+    border-color: rgb(187, 126, 243);
+}
+
+.two {
+    border: 1px solid rgb(232, 223, 241);
+    cursor: pointer;
+}
+
+.two:hover {
+    border-color: rgb(187, 126, 243);
+}
+
+.three {
+    border: 1px solid rgb(231, 245, 224);
+    cursor: pointer;
+}
+
+.three:hover {
+    border-color: rgb(145, 243, 16);
+}
+
+.nav-link.active {
+    color: blueviolet !important;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.nav-link {
+    margin-left: 20px;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s;
+}
+
+.offer1 {
+    height: 100%;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+.navbar {
+    min-height: 80px;
+}
+
+.nav-link:hover {
+    color: blueviolet;
+    text-decoration: underline;
+}
+
+.hero {
+    background-image: linear-gradient(to right, rgba(70, 23, 154, 0.8), rgba(80, 23, 154, 0.8)),
+        url(./images/hero-bg-img.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+
+.services {
+    padding-top: 80px;
+}
+
+.head p {
+    font-size: 20px;
+}
+
+.content {
+    max-width: 900px;
+    width: 100%;
+    padding-top: 30px;
+}
+
+.locate {
+    position: relative;
+}
+
+.locate input {
+    padding-left: 25px;
+}
+
+.locate i {
+    position: absolute;
+    top: 10px;
+    color: rgb(90, 89, 89);
+    left: 10px;
+}
+
+.hero form {
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.hero form label {
+    color: gray;
+}
+
+.hero .form-check-label {
+    background-color: rgb(161, 91, 226);
+}
+
+.hero .form-check-label:hover {
+    background-color: rgb(117, 18, 211);
+}
+
+.satisfy .card-title {
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.collection {
+    background-color: var(--color-violet-400);
+    padding-block: 80px;
+}
+
+.head3 h3 {
+    font-size: 15px;
+    padding: 5px 15px;
+    border: 2px solid rgb(219, 214, 224);
+    width: fit-content;
+    text-align: center;
+    border-radius: 20px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.head3 h3::before,
+.head3 h3::after {
+    content: " ";
+    width: 60px;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+}
+
+h3::before {
+    right: 100%;
+    margin-right: 30px;
+    background: linear-gradient(to left, blueviolet, rgb(238, 238, 240));
+}
+
+h3::after {
+    left: 100%;
+    margin-left: 30px;
+    background: linear-gradient(to right, blueviolet, rgb(235, 234, 236));
+}
+
+.head3 h2 {
+    color: blueviolet;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.text-gradient {
+    background: linear-gradient(to right, blueviolet, orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.head3 p {
+    font-size: 20px;
+}
+
+.agentphoto {
+    width: 20%;
+    border-radius: 50%;
+}
+
+.agentphoto img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.agentProfile h3 {
+    font-size: 15px;
+    color: grey;
+}
+
+.first button {
+    font-size: 15px;
+    border-radius: 10px;
+    background-color: rgb(236, 225, 243);
+    border: none;
+    color: blueviolet;
+}
+
+.first button:hover {
+    background-color: rgb(214, 189, 238);
+    cursor: pointer;
+}
+
+.cardAgent p {
+    text-align: left;
+    color: grey;
+}
+
+.priceBefore {
+    text-decoration: line-through;
+    color: grey;
+}
+
+.priceAfter {
+    font-size: 30px;
+    font-weight: 700;
+    color: blueviolet;
+}
+
+.feature {
+    background-color: rgb(84, 25, 223);
+    width: fit-content;
+    left: 30px;
+    top: 20px;
+    position: absolute;
+    border-radius: 10px;
+    padding: 5px 10px;
+    color: white;
+    font-size: 15px;
+}
+
+.feature.colGreen {
+    background-color: rgb(51, 255, 0);
+}
+
+.feature.colOrange {
+    background-color: rgb(255, 174, 0);
+}
+
+.heart {
+    position: absolute;
+    background-color: white;
+    color: rgb(82, 80, 80);
+    width: fit-content;
+    left: 80%;
+    top: 20px;
+    padding: 7px 5px;
+    border-radius: 40%;
+    font-size: 20px;
+}
+
+.heart:hover {
+    color: red;
+}
+
+.cameraa {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.67);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    top: 50%;
+    left: 10px;
+}
+
+.cameraa i {
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    padding-right: 5px;
+}
+
+.house-photo {
+    overflow: hidden;
+    position: relative;
+}
+
+.house-photo img {
+    display: block;
+    transition: 0.3s ease;
+    width: 100%;
+}
+
+.offer1:hover .house-photo img {
+    transform: scale(1.1);
+}
+
+.viewALL {
+    background-color: rgb(74, 8, 136);
+    font-size: 17px;
+    padding: 10px 15px;
+    margin-block: 30px;
+    color: white;
+    border-radius: 10px;
+    border: none
+}
+
+.viewALL:hover {
+    background-color: blueviolet;
+    cursor: pointer;
+}
+
+.tab-button {
+    font-weight: bolder;
+    border: 2px transparent;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    padding: 16px 24px;
+    background-color: rgb(252, 251, 251);
+}
+
+.tab-button:hover {
+    font-weight: 600;
+    color: rgb(145, 50, 233);
+    background-color: rgb(233, 226, 240);
+    border: bottom 2px solid blueviolet;
+}
+
+hr {
+    width: 100%;
+    color: grey;
+    height: 2px;
+    text-align: center;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.colorIcon {
+    background-color: rgb(218, 204, 231);
+    color: blueviolet;
+}
+
+.tab-content h3 {
+    font-weight: 600;
+    font-size: 30px;
+    padding-block: 20px;
+    color: rgb(34, 33, 33);
+}
+
+.tab-content p {
+    font-weight: 300;
+    font-size: 18px;
+    padding-block: 20px;
+    color: grey;
+    padding-block: 0;
+}
+
+.card-body .card-text {
+    font-size: 16px;
+}
+
+.searchBtn {
+    background-color: rgb(164, 85, 238);
+    color: white;
+    padding: 16px 30px;
+    font-size: 15px;
+    font-weight: 700;
+    border: none;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.searchBtn:hover {
+    cursor: pointer;
+    background-color: rgb(94, 11, 172);
+    transition: 0.3s ease;
+}
+
+.hint {
+    background-color: rgb(252, 253, 253);
+    width: fit-content;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 2px 2px 0px white;
+    position: absolute;
+    top: 80%;
+    left: -10px;
+    font-size: 20px;
+
+}
+
+@media(max-width:768px) {
+    .hint {
+        position: static;
+        transform: none;
+        margin-top: 15px;
+        text-align: center;
+    }
+}
+
+.hint span {
+    display: block;
+}
+
+.content2 {
+    margin-bottom: 60px;
+}
+
+.hint span:first-child {
+    color: blueviolet;
+}
+
+.hint span:last-child {
+    color: grey;
+}
+
+.tab-content {
+    display: none;
+    animation: fade 0.3s ease;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.tab-button-active {
+    background-color: blueviolet;
+    color: white;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY();
+    }
+}
+
+#Selling button {
+    background-color: green;
+    color: white;
+}
+
+#Selling i {
+    background-color: rgb(135, 223, 135);
+    color: rgb(173, 122, 207);
+}
+
+#Renting i {
+    background-color: rgb(226, 197, 238);
+    color: rgb(205, 43, 226);
+}
+
+#Investing i {
+    background-color: rgb(238, 225, 197);
+    color: rgb(228, 170, 11);
+}
+
+#Testimonials {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, rgba(47, 1, 85, 0.88), rgba(63, 2, 112, 0.89));
+    padding-top: 100px;
+}
+
+.head4 h3 {
+
+    font-size: 12px;
+    padding: 5px 15px;
+    border: 2px solid rgb(222, 213, 231);
+    width: fit-content;
+    text-align: center;
+    border-radius: 20px;
+    margin: 20px auto;
+    position: relative;
+    color: purple;
+    background-color: white;
+    font-weight: 600;
+}
+
+
+
+.head4 h3::before,
+.head4 h3::after {
+    content: " ";
+    width: 70px;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+}
+
+.head4 h3::before {
+    right: 100%;
+    margin-right: 30px;
+    background: linear-gradient(to left, rgb(231, 142, 8), rgba(74, 2, 133, 0.88));
+}
+
+.head4 h3::after {
+    left: 100%;
+    margin-left: 30px;
+    background: linear-gradient(to right, rgb(228, 139, 6),
+            rgba(78, 2, 141, 0.88));
+}
+
+.head4 h2 {
+    color: white;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+
+.head4 p {
+    font-size: 20px;
+    color: rgb(170, 169, 169);
+}
+
+.stars {
+    color: rgb(250, 225, 3);
+}
+
+.card-title h5 {
+    font-size: 15px;
+    color: rgb(163, 162, 162);
+}
+
+.Michael .card-text {
+    color: rgb(94, 94, 94);
+    font-size: 20px;
+    padding-top: 15px;
+}
+
+.photoWidth {
+    width: 7%;
+    margin: 10px;
+}
+
+.Michael img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.About p {
+    margin-bottom: 0;
+    color: grey;
+}
+
+.About {
+    margin-bottom: 10px;
+}
+
+.About :first-child {
+    color: rgb(29, 28, 28);
+}
+
+#FAQ {
+    background-color: oklch(0.985 0.002 247.839);
+    padding-block: 70px;
+}
+
+#FAQ h3 {
+    color: blueviolet;
+    font-weight: 400;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 7px 20px;
+}
+
+.accordion-item {
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+.accordion-header button {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px;
+    box-shadow: 4px 4px 2px rgb(221, 221, 221);
+    border-radius: 15px;
+}
+
+#collapseThree {
+    font-weight: 300;
+    color: grey;
+}
+
+#Contact h3 {
+    color: blueviolet;
+    font-weight: 400;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 7px 20px;
+}
+
+#Contact {
+    background-color: white;
+    padding-top: 70px;
+}
+
+.flipo {
+    background-color: rgb(95, 6, 197);
+    padding: 20px;
+    font-size: 20px;
+    width: fit-content;
+    margin: 15px 12px 10px 12px;
+    border-radius: 15px;
+    color: white;
+}
+
+.call {
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.mon {
+    font-weight: 300;
+    font-size: 12px;
+    color: grey;
+}
+
+.lastP {
+    font-weight: 800;
+    font-size: 15px;
+    color: rgb(51, 5, 124);
+}
+
+.icon1 {
+    border: 1px solid rgb(172, 171, 171);
+    border-radius: 20px;
+}
+
+.icon1:hover {
+    transform: translateY(-5px);
+
+    border: 2px solid blueviolet;
+}
+
+.icon1:hover i {
+    padding: 25px;
+    font-size: 25px;
+    transition: 0.1s;
+
+}
+
+.lope {
+    background-color: rgb(153, 6, 197);
+    padding: 20px;
+    font-size: 20px;
+    width: fit-content;
+    margin: 15px 12px 10px 12px;
+    border-radius: 15px;
+    color: white;
+}
+
+.com {
+    font-weight: 800;
+    font-size: 15px;
+    color: rgb(100, 5, 124);
+}
+
+.dot {
+    background: linear-gradient(-200deg, rgba(197, 6, 181, 0.83)40%, orange);
+    padding: 20px;
+    font-size: 20px;
+    width: fit-content;
+    margin: 15px 12px 10px 12px;
+    border-radius: 15px;
+    color: white;
+}
+
+.icon3 {
+    border: 1px solid rgb(172, 171, 171);
+    border-radius: 20px;
+}
+
+.icon3:hover {
+    transform: translateY(-5px);
+    border: 2px solid rgba(197, 6, 181, 0.83);
+}
+
+.icon3:hover i {
+    padding: 25px;
+    font-size: 25px;
+    transition: 0.1s;
+}
+
+.icon2 {
+    border: 1px solid rgb(172, 171, 171);
+    border-radius: 20px;
+}
+
+.icon2:hover {
+    transform: translateY(-5px);
+    border: 2px solid rgba(197, 6, 181, 0.83);
+}
+
+.icon2:hover i {
+    padding: 25px;
+    font-size: 25px;
+    transition: 0.1s;
+}
+
+.hills {
+    color: rgb(226, 43, 217);
+    font-weight: 800;
+}
+
+.mess {
+    background-color: rgb(13, 3, 151);
+    padding: 20px;
+    font-size: 20px;
+    width: fit-content;
+    margin: 15px 12px 10px 12px;
+    border-radius: 15px;
+    color: white;
+}
+
+.chat {
+    color: rgb(2, 27, 170);
+    font-weight: 800;
+}
+
+.icon4 {
+    border: 1px solid rgb(172, 171, 171);
+    border-radius: 20px;
+}
+
+.icon4:hover {
+    transform: translateY(-5px);
+    border: 2px solid rgba(6, 25, 197, 0.83);
+}
+
+.icon4:hover i {
+    padding: 25px;
+    font-size: 25px;
+    transition: 0.1s;
+}
+
+.firstTable {
+    background-color: rgb(245, 245, 253);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.secondTable .card {
+    background: linear-gradient(to top, rgb(93, 40, 109), rgb(147, 110, 233));
+    padding: 10px;
+    color: white;
+    border-radius: 20px;
+}
+
+.secondTable {
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+.details .card {
+    margin-bottom: 0;
+}
+
+.details {
+    background-color: rgb(245, 245, 253);
+}
+
+.secondTable i {
+    background-color: rgba(228, 149, 238, 0.47);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+@media(max-width:768px) {
+    .social i {
+        font-size: 10px;
+        padding: 5px;
+    }
+}
+
+.social i:hover {
+    transform: scale(1.3);
+    background-color: rgba(222, 99, 238, 0.47);
+    transition: 0.2s ease;
+}
+
+.secondTable .final p {
+    font-size: 13px;
+}
+
+.firstTable h2 {
+    font-size: 25px;
+}
+
+.firstTable h5 {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.firstTable p {
+    margin-bottom: 5px;
+    font-size: 10px;
+}
+
+.leftPart {
+    position: relative;
+}
+
+.locate {
+    color: crimson
+}
+
+.clock {
+    color: rgb(97, 20, 220);
+}
+
+.mob {
+    color: rgb(174, 43, 226);
+}
+
+.bulk {
+    color: rgb(220, 43, 226);
+}
+
+.rightPart {
+    border: 1px solid rgb(228, 225, 225);
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+}
+
+.rightPart h6 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.rightPart .email {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid rgb(221, 220, 220);
+    border-radius: 5px;
+}
+
+.rightPart .phonenumber {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid rgb(221, 220, 220);
+    border-radius: 5px;
+}
+
+#Subject {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid rgb(221, 220, 220);
+    border-radius: 5px;
+}
+
+.rightPart textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid rgb(221, 220, 220);
+    border-radius: 5px
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid rgb(221, 220, 220);
+    border-radius: 10px;
+    background-color: blueviolet;
+    color: white;
+    font-size: 20px;
+}
+
+.respect {
+    text-align: center;
+    padding-block: 20px;
+    color: rgb(156, 156, 156);
+}
+
+.required {
+    color: crimson;
+}
+
+.container2 {
+    padding-bottom: 150px;
+    overflow: hidden;
+}
+
+.circle1 {
+    position: absolute;
+    bottom: -250px;
+    left: -90px;
+    width: 270px;
+    height: 270px;
+    margin-right: 16px;
+    margin-top: 16px;
+    border-radius: 50%;
+    background-color: rgb(231, 222, 240);
+
+
+}
+
+.circle2 {
+    position: absolute;
+    bottom: -70px;
+    left: 110px;
+    width: 100px;
+    height: 100px;
+    margin-right: 16px;
+    margin-top: 16px;
+    border-radius: 50%;
+    border: 3px solid rgba(137, 43, 226, 0.53);
+}
+
+hr {
+    width: 90%;
+    height: 3px;
+    color: white;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+#Contact {
+    padding-top: 0;
+}
+
+footer {
+    background-color: rgb(98, 43, 226);
+    color: white;
+}
+
+.end h3 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.end i {
+    background-color: rgba(206, 174, 219, 0.4);
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.end i:hover {
+    transform: scale(1.1);
+    background-color: rgb(183, 94, 224);
+}
+
+.love {
+    color: red;
+}
+
+.made {
+    padding-bottom: 20px;
+}
